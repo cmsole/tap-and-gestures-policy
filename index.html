@@ -36,7 +36,7 @@
       font-size: 1.2rem;
       margin-top: 28px;
       margin-bottom: 10px;
-      color: #39ff14; /* Neon Green */
+      color: #39ff14;
     }
     p {
       margin-top: 0;
@@ -53,7 +53,7 @@
       margin-bottom: 8px;
     }
     a {
-      color: #39ff14; /* Neon Green to match headings */
+      color: #39ff14;
       text-decoration: none;
       word-break: break-word;
     }
@@ -64,7 +64,7 @@
       background-color: #1b1e28;
       padding: 14px 16px;
       border-radius: 10px;
-      border-left: 3px solid #39ff14; /* Neon Green */
+      border-left: 3px solid #39ff14;
       margin-bottom: 14px;
     }
     .effective-date {
@@ -90,20 +90,20 @@
         border-bottom-color: #e5e7eb;
       }
       h2 {
-        color: #16a34a; /* Readable Green for Light Mode */
+        color: #16a34a;
       }
       p, ul {
         color: #374151;
       }
       a {
-        color: #16a34a; /* Readable Green for Light Mode */
+        color: #16a34a;
       }
       .controller-box, .effective-date {
         background-color: #f0f7ff;
         color: #111827;
       }
       .controller-box {
-        border-left-color: #16a34a; /* Readable Green for Light Mode */
+        border-left-color: #16a34a;
       }
     }
   </style>
@@ -130,6 +130,7 @@
     <p>To provide its core features without compromising your privacy, the Application requests specific Android permissions. We are committed to complete transparency regarding how these permissions are used:</p>
     <ul>
       <li><strong>Microphone (RECORD_AUDIO):</strong> Tap and Gestures requires the microphone permission strictly to process live music beats and generate synchronized audio haptic feedback. All audio processing is performed locally on your device in real-time in temporary memory. We do NOT record, save, store, or transmit any microphone data, ambient noise, conversations, or voice recordings to any external server.</li>
+      <li><strong>Screen Capture / Media Projection (Internal Audio):</strong> To synchronize haptics with high-quality system audio, the Application uses the MediaProjection API. When enabling this, Android displays a standard system warning stating the app will have access to "record or cast your screen." Please be assured: Tap and Gestures ONLY analyzes internal audio streams. It NEVER records, captures, views, or saves your screen content, display, or video output. All audio processing is done locally in real-time, and no data is ever transmitted off your device.</li>
       <li><strong>Notification Access (BIND_NOTIFICATION_LISTENER_SERVICE):</strong> To detect when music is playing or paused without draining your battery, the Application requires Notification Access. When enabling this, Android displays a standard system warning stating the app will be able to read all notifications, including personal information such as contact names and the text of messages. Please be assured: Tap and Gestures ONLY looks at active media controllers (like Spotify, Apple Music, or YouTube) to sync lyrics and pause/play gestures. It completely ignores, does not read, and does not save your personal messages, contact names, emails, or phone calls. No notification data is ever transmitted off your device.</li>
       <li><strong>Local Files and Storage (Storage Access Framework):</strong> If you choose to link a folder to load your own custom <code>.lrc</code> lyric files, the Application only reads the specific files in the directory you select. Your local files are processed strictly on your device. They are NEVER uploaded, transmitted, collected, or shared with us or any third-party server.</li>
     </ul>
