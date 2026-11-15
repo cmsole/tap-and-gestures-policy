@@ -126,6 +126,14 @@
     <p>The Application and related services acquire the information you supply when you download, access, or register for the service. Registration with the Service Provider is not mandatory. However, you might not be able to use some of the features offered by the service unless you register.</p>
     <p>The Service Provider may also use the information you provide to send important information, required notices, and, where permitted by law, marketing communications.</p>
 
+    <h2>Sensitive Permissions and Local Data Processing</h2>
+    <p>To provide its core features without compromising your privacy, the Application requests specific Android permissions. We are committed to complete transparency regarding how these permissions are used:</p>
+    <ul>
+      <li><strong>Microphone (RECORD_AUDIO):</strong> Tap and Gestures requires the microphone permission strictly to process live music beats and generate synchronized audio haptic feedback. All audio processing is performed locally on your device in real-time in temporary memory. We do NOT record, save, store, or transmit any microphone data, ambient noise, conversations, or voice recordings to any external server.</li>
+      <li><strong>Notification Access (BIND_NOTIFICATION_LISTENER_SERVICE):</strong> To detect when music is playing or paused without draining your battery, the Application requires Notification Access. When enabling this, Android displays a standard system warning stating the app will be able to read all notifications, including personal information such as contact names and the text of messages[span_1](start_span)[span_1](end_span). Please be assured: Tap and Gestures ONLY looks at active media controllers (like Spotify, Apple Music, or YouTube) to sync lyrics and pause/play gestures. It completely ignores, does not read, and does not save your personal messages, contact names, emails, or phone calls[span_2](start_span)[span_2](end_span). No notification data is ever transmitted off your device.</li>
+      <li><strong>Local Files and Storage (Storage Access Framework):</strong> If you choose to link a folder to load your own custom <code>.lrc</code> lyric files, the Application only reads the specific files in the directory you select. Your local files are processed strictly on your device. They are NEVER uploaded, transmitted, collected, or shared with us or any third-party server.</li>
+    </ul>
+
     <h2>Legal basis for processing your personal data</h2>
     <p>Where the GDPR applies, the Service Provider relies on one or more lawful bases to process your personal data, including:</p>
     <ul>
